@@ -14,17 +14,24 @@ export default {
       "fraunces-900": "var(--fraunces-900)",
     },
     extend: {
+      backgroundImage: {
+        "hero-desktop": "url(/illustration/desktop/image-header.jpg)",
+        "hero-mobile": "url(/illustration/mobile/image-header.jpg)",
+      },
       colors: {
-        "soft-red": "hsl(var(--soft-red))",
-        yellow: "hsl(var(--yellow))",
-        "dark-desaturated-cyan": "hsl(var(--dark-desaturated-cyan))",
+        "soft-red": "hsl(var(--soft-red) / <alpha-value>)",
+        yellow: "hsl(var(--yellow) / <alpha-value>)",
+        "dark-desaturated-cyan":
+          "hsl(var(--dark-desaturated-cyan) / <alpha-value>)",
         "dark-blue": "hsl(var(--dark-blue))",
-        "dark-moderate-cyan": "hsl(var(--dark-moderate-cyan))",
-        "very-dark-desaturated-blue": "hsl(var(--very-dark-desaturated-blue))",
-        "very-dark-grayish-blue": "hsl(var(--very-dark-grayish-blue))",
-        "dark-grayish-blue": "hsl(var(--dark-grayish-blue))",
-        "grayish-blue": "hsl(var(--grayish-blue))",
-        White: "hsl(var(--grayish-blue))",
+        "dark-moderate-cyan": "hsl(var(--dark-moderate-cyan) / <alpha-value>)",
+        "very-dark-desaturated-blue":
+          "hsl(var(--very-dark-desaturated-blue) / <alpha-value>)",
+        "very-dark-grayish-blue":
+          "hsl(var(--very-dark-grayish-blue) / <alpha-value>)",
+        "dark-grayish-blue": "hsl(var(--dark-grayish-blue) / <alpha-value>)",
+        "grayish-blue": "hsl(var(--grayish-blue) / <alpha-value>)",
+        white: "hsl(var(--white) / <alpha-value>)",
       },
     },
   },
