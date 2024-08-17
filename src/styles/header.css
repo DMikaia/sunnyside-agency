@@ -1,0 +1,7 @@
+.w-menu {
+  width: calc(100% - 64px);
+}
+.triangle {
+  aspect-ratio: 1;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
