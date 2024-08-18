@@ -4,8 +4,8 @@ import { labels } from "@helpers/nav";
 import NavMobile from "../nav/mobile";
 ---
 
-<header class="w-full relative h-[68px] flex justify-between items-center py-4 px-8">
-  <h1 class="font-barlow-600 text-xl text-white">sunnyside</h1>
+<header class="w-full relative h-[68px] flex justify-between items-center py-4 tv:py-16 px-8 tv:px-16">
+  <h1 class="font-barlow-700 text-2xl tv:text-4xl text-white">sunnyside</h1>
 
   <Nav labels={labels} client:load />
   <NavMobile labels={labels} client:load />

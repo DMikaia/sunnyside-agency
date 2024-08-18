@@ -1,0 +1,23 @@
+---
+import { pictures } from "@stores/gallery";
+import { Image } from "astro:assets";
+---
+
+<div class="w-full h-fit tablet:max-h-[894px] grid grid-cols-2 tablet:grid-cols-4">
+  {pictures.map(picture => (
+    <Image
+      src={`/illustration/desktop${picture.src}`}
+      alt={`${picture.alt} desktop version`}
+      width={720}
+      height={894}
+      class="hidden tablet:block w-full"
+    />
+    <Image
+      src={`/illustration/mobile${picture.src}`}
+      alt={`${picture.alt} mobile`}
+      width={376}
+      height={376}
+      class="block tablet:hidden version w-full"
+    />
+  ))}
+</div>

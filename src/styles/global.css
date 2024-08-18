@@ -8,6 +8,11 @@
 }
 
 @font-face {
+  font-family: "Barlow-Bold";
+  src: url("../assets/barlow/Barlow-Bold.ttf");
+}
+
+@font-face {
   font-family: "Fraunces-Bold";
   src: url("../assets/fraunces/Fraunces_9pt-Bold.ttf");
 }
@@ -39,6 +44,7 @@
 
     /* Font family */
     --barlow-600: "Barlow-SemiBold", sans-serif;
+    --barlow-700: "Barlow-Bold", sans-serif;
     --fraunces-700: "Fraunces-Bold", sans-serif;
     --fraunces-900: "Fraunces-Black", sans-serif;
   }

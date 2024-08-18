@@ -12,6 +12,7 @@ export default {
     fontFamily: {
       "sans-serif": "sans-serif",
       "barlow-600": "var(--barlow-600)",
+      "barlow-700": "var(--barlow-700)",
       "fraunces-700": "var(--fraunces-700)",
       "fraunces-900": "var(--fraunces-900)",
     },

@@ -1,0 +1,23 @@
+---
+import { Image } from "astro:assets"
+
+interface Props {
+  avatar: string;
+  text: string;
+  name: string;
+  role: string;
+}
+
+const { avatar, text, name, role } = Astro.props;
+---
+
+<div class="flex flex-col w-fit h-fit gap-8 tv:gap-16 text-center justify-center items-center">
+  <Image src={avatar} alt={name} width={144} height={144} class="rounded-full w-[92px] h-[92px] tv:w-[144px] tv:h-[144px]" />
+
+  <p class="text-very-dark-grayish-blue w-[304px] tablet:w-full text-sm laptop:text-base tv:text-lg font-barlow-600">{text}</p>
+
+  <section class="flex flex-col tablet:gap-2 tv:gap-4">
+    <h3 class="text-very-dark-desaturated-blue font-fraunces-700">{name}</h3>
+    <p class="text-grayish-blue text-xs laptop:text-sm tv:text-base font-barlow-600">{role}</p>
+  </section>
+</div>
