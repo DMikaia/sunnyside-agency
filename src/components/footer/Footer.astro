@@ -3,14 +3,6 @@ import { labels } from "@helpers/nav";
 import { socials } from "@helpers/socials";
 ---
 
-<style>
-  svg:hover path {
-    cursor: pointer;
-    fill: hsl(var(--white));
-    transition: fill linear 0.3s;
-  }
-</style>
-
 <footer class="w-full h-fit p-8 tv:p-16 bg-dark-moderate-cyan/50 text-dark-desaturated-cyan flex flex-col justify-center items-center gap-8">
   <section class="w-full tablet:w-fit h-fit flex flex-col gap-4 justify-center items-center text-center">
     <h1 class="text-2xl tv:text-4xl font-barlow-700 w-fit">sunnyside</h1>
@@ -25,7 +17,7 @@ import { socials } from "@helpers/socials";
   <div class="flex gap-8 tablet:gap-4 tv:gap-8 justify-center items-center">
     {socials.map(social => (
       <svg width={social.width} height={social.height} xmlns="http://www.w3.org/2000/svg">
-        <path  d={social.d} fill="#2C7566" "fill-rule"="non-zero" />
+        <path  d={social.d} fill="#2C7566" />
       </svg>
     ))}
   </div>

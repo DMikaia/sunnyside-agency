@@ -49,3 +49,12 @@
     --fraunces-900: "Fraunces-Black", sans-serif;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: proximity;
+}
+
+.h-hero {
+  height: calc(100% - 68px);
+}

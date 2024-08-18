@@ -1,0 +1,5 @@
+svg:hover path {
+  cursor: pointer;
+  fill: hsl(var(--white));
+  transition: fill linear 0.3s;
+}
