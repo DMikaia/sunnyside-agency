@@ -3,17 +3,17 @@ import Card from "./Card.astro";
 import { testimonials } from "@stores/testimonial";
 ---
 
-<section class="w-full h-fit bg-white flex flex-col justify-center items-center gap-16 tv:gap-24 p-8 tablet:p-16 desktop:p-24 tv:p-32">
+<div class="w-full h-fit bg-white flex flex-col justify-center items-center gap-16 tv:gap-24 p-8 tablet:p-16 desktop:p-24 tv:p-32">
   <h1 class="text-grayish-blue uppercase font-fraunces-900 text-2xl">Client testimonials</h1>
 
   <div class="flex flex-col tablet:flex-row gap-16 items-center justify-center">
-  {testimonials.map(testimonial => (
-    <Card
-      avatar={testimonial.avatar}
-      text={testimonial.text}
-      name={testimonial.name}
-      role={testimonial.role}
-    />
-  ))}
+    {testimonials.map(testimonial => (
+      <Card
+        avatar={testimonial.avatar}
+        text={testimonial.text}
+        name={testimonial.name}
+        role={testimonial.role}
+      />
+    ))}
   </div>
-</section>
+</div>
