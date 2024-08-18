@@ -11,6 +11,7 @@ import { Image } from "astro:assets";
       width={720}
       height={894}
       class="hidden tablet:block w-full"
+      loading={"lazy"}
     />
     <Image
       src={`/illustration/mobile${picture.src}`}
@@ -18,6 +19,7 @@ import { Image } from "astro:assets";
       width={376}
       height={376}
       class="block tablet:hidden version w-full"
+      loading={"lazy"}
     />
   ))}
 </div>

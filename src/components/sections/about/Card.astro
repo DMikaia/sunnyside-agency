@@ -18,7 +18,7 @@ const {image, section, reversed, color} = Astro.props;
 ---
 
 <style>
-  #learn-more::before {
+  .learn-more::before {
     position: absolute;
     width: 100%;
     height: 8px;
@@ -28,7 +28,7 @@ const {image, section, reversed, color} = Astro.props;
     opacity: .5;
   }
 
-  #learn-more:hover::before {
+  .learn-more:hover::before {
     opacity: 1;
     transition: opacity .3s ease;
   }
