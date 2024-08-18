@@ -19,6 +19,14 @@ export default {
       backgroundImage: {
         "hero-desktop": "url(/illustration/desktop/image-header.jpg)",
         "hero-mobile": "url(/illustration/mobile/image-header.jpg)",
+        "graphic-design-desktop":
+          "url(/illustration/desktop/image-graphic-design.jpg)",
+        "graphic-design-mobile":
+          "url(/illustration/mobile/image-graphic-design.jpg)",
+        "photography-desktop":
+          "url(/illustration/desktop/image-photography.jpg)",
+        "photography-mobile":
+          "url(/illustration/mobile/image-photography.jpg)",
       },
       colors: {
         "soft-red": "hsl(var(--soft-red) / <alpha-value>)",
