@@ -8,13 +8,13 @@ import Header from "@components/header/Header.astro";
 }
 </style>
 
-<div class="w-full h-[480px] tablet:h-screen bg-hero-mobile tablet:bg-hero-desktop bg-cover bg-center">
+<div class="w-full h-[480px] tablet:h-[640px] laptop:h-screen bg-hero-mobile tablet:bg-hero-desktop bg-cover bg-center">
   <Header />
 
   <div class="w-full h-hero flex flex-col items-center justify-center">
-    <section class="h-fit w-fit flex flex-col gap-8 tv:gap-16 items-center">
-      <h1 class="text-center text-5xl tv:text-7xl font-fraunces-700 uppercase text-white">we are creatives</h1>
-      <img src="/icon/icon-arrow-down.svg" alt="Arrow down icon" class="tv:w-[72px] tv:h-[228px]" width="36" height="114">
+    <section class="h-fit w-fit flex flex-col gap-8 tablet:gap-16 tv:gap-24 items-center">
+      <h1 class="text-center text-5xl tv:text-8xl font-fraunces-700 uppercase text-white">we are creatives</h1>
+      <img src="/icon/icon-arrow-down.svg" alt="Arrow down icon" class="desktop:w-[72px] desktop:h-[228px] tv:w-[108px] tv:h-[342px]" width="36" height="114">
     </section>
   </div>
 </div>

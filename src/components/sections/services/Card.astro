@@ -8,7 +8,7 @@ interface Props {
 const { title, description, className} = Astro.props
 ---
 
-<section class={`${className} w-full h-[560px] tablet:h-screen bg-center bg-cover flex flex-col justify-end items-center gap-2 laptop:gap-4 tv:gap-8 pb-16 desktop:p-32 px-8 laptop:px-24 desktop:px-16 tv:px-24 text-center`}>
+<section class={`${className} w-full h-[560px] tablet:h-screen tablet:max-h-[600px] bg-center bg-cover flex flex-col justify-end items-center gap-2 laptop:gap-4 tv:gap-8 pb-16 px-8 laptop:px-24 desktop:px-16 tv:px-24 text-center`}>
   <h2 class="text-2xl desktop:text-4xl tv:text-5xl font-fraunces-900">{title}</h2>
   <p class="text-base desktop:text-xl tv:text-2xl font-barlow-600">{description}</p>
 </section>
