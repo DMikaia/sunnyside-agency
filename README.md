@@ -43,7 +43,7 @@ Users should be able to:
 
 I've found a fun way to add svg elements and be able to change their colors without copying the whole svg. The only drawback is that it only works with a specific pattern of the element.
 
-To see how you can add code snippets, see below:
+See the code snippets below:
 
 ```astro
 <div class="flex gap-8 tablet:gap-4 tv:gap-8 justify-center items-center">
