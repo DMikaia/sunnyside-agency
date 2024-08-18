@@ -39,7 +39,7 @@ const {image, section, reversed, color} = Astro.props;
     <section class="w-fit h-fit justify-center items-center tablet:items-start gap-8 tablet:gap-4 tv:gap-8 flex flex-col">
       <h2 class="text-very-dark-desaturated-blue text-3xl tv:text-5xl font-fraunces-900">{section.title}</h2>
       <p class="text-very-dark-grayish-blue text-sm tablet:text-base tv:text-xl">{section.description}</p>
-      <button id="learn-more" class={`relative text-very-dark-desaturated-blue before:content-[''] ${color} uppercase font-fraunces-700 tv:text-xl`}>learn more</button>
+      <button class={`learn-more relative text-very-dark-desaturated-blue before:content-[''] ${color} uppercase font-fraunces-700 tv:text-xl`}>learn more</button>
     </section>
   </div>
 
