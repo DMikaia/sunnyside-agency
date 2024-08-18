@@ -1,0 +1,15 @@
+---
+import { elements } from "@helpers/about";
+import Card from "./Card.astro";
+---
+
+<div class="h-fit w-full">
+  {elements.map(element => (
+    <Card
+      color={element.color}
+      image={element.image}
+      section={element.section}
+      reversed={element.reversed}
+    />
+  ))}
+</div>

@@ -1,0 +1,14 @@
+---
+import Card from "./Card.astro";
+import { services } from "@helpers/service";
+---
+
+<div class="h-fit w-full flex flex-col tablet:flex-row">
+  {services.map(service => (
+    <Card
+      title={service.title}
+      description={service.descritpion}
+      className={service.className}
+    />
+  ))}
+</div>

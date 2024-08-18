@@ -1,5 +1,3 @@
-import "../../styles/header.css";
-
 import { useState } from "react";
 
 interface Props {
