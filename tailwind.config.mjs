@@ -7,8 +7,10 @@ export default {
       tablet: "640px",
       laptop: "1024px",
       desktop: "1280px",
+      tv: "1440px",
     },
     fontFamily: {
+      "sans-serif": "sans-serif",
       "barlow-600": "var(--barlow-600)",
       "fraunces-700": "var(--fraunces-700)",
       "fraunces-900": "var(--fraunces-900)",

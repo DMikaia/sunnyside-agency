@@ -1,0 +1,15 @@
+---
+import Card from "./Card.astro";
+import { services } from "../../../helpers/services"
+---
+
+<div class="h-screen w-full">
+  {services.map(service => (
+    <Card
+      color={service.color}
+      image={service.image}
+      section={service.section}
+      reversed={service.reversed}
+    />
+  ))}
+</div>

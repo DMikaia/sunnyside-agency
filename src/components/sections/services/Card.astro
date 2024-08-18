@@ -1,0 +1,65 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  image: {
+    src: string;
+    alt: string;
+  };
+  reversed: boolean;
+  color: string;
+  section: {
+    title: string;
+    description: string;
+  }
+}
+
+const {image, section, reversed, color} = Astro.props;
+---
+
+<style>
+  #learn-more::before {
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    z-index: -1;
+    border-radius: 1rem;
+    bottom: 4px;
+    opacity: .5;
+  }
+
+  #learn-more:hover::before {
+    opacity: 1;
+    transition: opacity .3s ease;
+  }
+</style>
+
+<div class={`flex flex-1 w-full h-fit tablet:h-full max-h-[600px] flex-col-reverse ${reversed ? "tablet:flex-row-reverse" : "tablet:flex-row"}`}>
+  <div class="w-full tablet:w-1/2 py-16 px-8 tablet:py-0 tablet:px-24 text-center tablet:text-left h-fit tablet:h-full flex justify-center items-center">
+    <section class="w-fit h-fit justify-center items-center tablet:items-start gap-8 tablet:gap-4 tv:gap-8 flex flex-col">
+      <h2 class="text-very-dark-desaturated-blue text-3xl tv:text-5xl font-fraunces-900">{section.title}</h2>
+      <p class="text-very-dark-grayish-blue text-sm tablet:text-base tv:text-xl">{section.description}</p>
+      <button id="learn-more" class={`relative text-very-dark-desaturated-blue before:content-[''] before:bg-${color} uppercase font-fraunces-700 tv:text-xl`}>learn more</button>
+    </section>
+  </div>
+
+
+  <div class="w-full tablet:w-1/2 h-fit tablet:h-full max-h-[600px]">
+    <Image
+      class="w-full h-full hidden tablet:block"
+      src={`/illustration/desktop/${image.src}`}
+      width="720"
+      height="600"
+      alt={`${image.alt} description`}
+      loading={"lazy"}
+    />
+    <Image
+      class="w-full h-full block tablet:hidden"
+      src={`/illustration/mobile/${image.src}`}
+      width="750"
+      height="624"
+      alt={`${image.alt} mobile`}
+      loading={"lazy"}
+    />
+  </div>
+</div>
