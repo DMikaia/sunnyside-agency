@@ -5,7 +5,7 @@ interface Props {
 export default function NavBar({ labels }: Props) {
   return (
     <div className="hidden tablet:flex items-center justify-center gap-8">
-      <nav className="flex items-center justify-center gap-8 w-fit h-fit">
+      <nav className="flex items-center justify-center gap-8 w-fit h-fit font-barlow-600">
         {labels.map((label) => (
           <span
             key={label}
